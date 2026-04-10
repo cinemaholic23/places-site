@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мои места</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <h1>Мои места</h1>
+    <p class="sub">Каталог интересных точек: кафе, рестораны, магазины, парки, храмы и другое</p>
+  </header>
+
+  <div class="filters" aria-label="Фильтры">
+    <button onclick="filterPlaces('all')">Все</button>
+    <button onclick="filterPlaces('cafe')">Кафе</button>
+    <button onclick="filterPlaces('restaurant')">Рестораны</button>
+    <button onclick="filterPlaces('shop')">Магазины</button>
+    <button onclick="filterPlaces('park')">Парки</button>
+    <button onclick="filterPlaces('temple')">Храмы</button>
+    <button onclick="filterPlaces('other')">Другое</button>
+  </div>
+
+  <div id="cards" class="cards"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
